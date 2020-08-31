@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Regular Expression.</p>
+<p>Click the button.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "Name";
+  var patt = new RegExp("e");
+  var res = patt.exec(str);
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
+
+</body>
+</html>
