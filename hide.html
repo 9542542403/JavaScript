@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html> 
+      
+<head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content= 
+        "width=device-width,initial-scale=1">  
+      
+    <title>JS Libraries and Frameworks</title> 
+      
+    <!--Pre-compiled libraries of jQuery UI -->
+    <link href =  
+"https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+            rel = "stylesheet"> 
+              
+    <script src =  
+        "https://code.jquery.com/jquery-1.10.2.js"> 
+    </script> 
+      
+    <script src =  
+        "https://code.jquery.com/ui/1.10.4/jquery-ui.js"> 
+    </script> 
+      
+    <style> 
+        .mainDiv { 
+            width: 550px;  
+            height: 180px; 
+        } 
+          
+        #toggleBtnId { 
+            padding: .4em 1em; 
+            text-decoration: none;  
+        } 
+      
+        #container {  
+            width: 300px; 
+            height: 150px;  
+            padding: 0.3em; 
+            position: relative; 
+        } 
+  
+        #container h3 {  
+            margin: 0;  
+            padding: 0.4em; 
+            text-align: center; 
+        }     
+  
+        .height{ 
+            height: 10px; 
+        } 
+    </style> 
+          
+    <script> 
+       $(document).ready(function () {
+            $("#hide").click(function () {
+                $("textarea").hide();
+            });
+             });
+         
+    </script> 
+</head> 
+      
+<body> 
+    <h1 style="color:green"> 
+       HIDING AND DISPLAING USAGE 
+    </h1> 
+
+<input type="radio" id="hide" name="hide" value="hide">
+<label for="hide">hide</label><br>
+<label for="area"></label>
+
+<textarea id="area" name="area" rows="4" cols="50">
+jQuery hide() Method
+The hide() method hides the selected elements. Tip: This is similar to the CSS property display:none. Note: Hidden elements will not be displayed at all (no longer affects the layout of the page). Tip: To show hidden elements, look at the show() method..
+</textarea>
+</body> 
+  
+</html> 
