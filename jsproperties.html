@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<p>DOUBLE CLICK</p>
+
+<script>
+$(document).ready(function(){
+  $("p").dblclick(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>If you double-click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+<br>
+<br>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+});
+</script>
+</head>
+<body>
+
+<button>TOGGLE HIDING</button>
+
+<p>This is a paragraph with little content.</p>
+<p>This is another small paragraph.</p>
+<br>
+<br>
+<p>FADEIN</p>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
+  });
+});
+</script>
+</head>
+<body>
+
+
+<button>Click to fade in boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+<br><br>
+
+<p>FADEOUT</p>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeOut();
+    $("#div2").fadeOut("slow");
+    $("#div3").fadeOut(3000);
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Click to fade out boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+
+</body>
+</html>
